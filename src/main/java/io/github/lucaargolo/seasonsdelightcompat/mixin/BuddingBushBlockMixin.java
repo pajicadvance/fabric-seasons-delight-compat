@@ -1,6 +1,5 @@
 package io.github.lucaargolo.seasonsdelightcompat.mixin;
 
-import com.nhoryzon.mc.farmersdelight.block.BuddingBushBlock;
 import io.github.lucaargolo.seasons.utils.FertilizableUtil;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
@@ -13,6 +12,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import vectorwing.farmersdelight.common.block.BuddingBushBlock;
 
 @Mixin(BuddingBushBlock.class)
 public abstract class BuddingBushBlockMixin extends PlantBlock {

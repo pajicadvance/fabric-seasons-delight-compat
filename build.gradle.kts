@@ -77,6 +77,17 @@ repositories {
         name = "Cafeteria"
         url = uri("https://maven.cafeteria.dev/releases")
     }
+    maven {
+        name = "Greenhouse Maven"
+        url = uri("https://maven.greenhouseteam.dev/releases/")
+    }
+    maven{ url = uri("https://mvn.devos.one/releases/")} // Porting Lib
+    maven {
+        url = uri("https://maven.jamieswhiteshirt.com/libs-release") // Reach Entity Attributes (Required by Porting Lib)
+        content {
+            includeGroup("com.jamieswhiteshirt")
+        }
+    }
     mavenLocal()
 }
 
@@ -87,7 +98,9 @@ dependencies {
     modImplementation("net.fabricmc:fabric-loader:${project["loader_version"]}")
 
     modImplementation("io.github.lucaargolo:fabric-seasons:${project["seasons_version"]}")
-    modImplementation("curse.maven:farmers-delight-fabric-${project["delight_id"]}:${project["delight_file"]}")
+    modImplementation("vectorwing:FarmersDelight:${project["delight_version"]}") {
+        exclude(group = "net.fabricmc")
+    }
 
 }
 

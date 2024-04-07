@@ -1,6 +1,5 @@
 package io.github.lucaargolo.seasonsdelightcompat.mixin;
 
-import com.nhoryzon.mc.farmersdelight.block.TomatoVineBlock;
 import io.github.lucaargolo.seasons.utils.FertilizableUtil;
 import io.github.lucaargolo.seasons.utils.SeasonalFertilizable;
 import net.minecraft.block.*;
@@ -11,6 +10,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import vectorwing.farmersdelight.common.block.TomatoVineBlock;
 
 @Mixin(TomatoVineBlock.class)
 public abstract class TomatoVineBlockMixin extends CropBlock implements Fertilizable, SeasonalFertilizable {
