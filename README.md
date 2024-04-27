@@ -1,3 +1,8 @@
+# Disclaimer
+This a ***temporary fork*** of Fabric Seasons Delight Compat updated to support the new Farmers Delight Refabricated mod.
+
+Releases will be provided until the original mod gets updated.
+
 <p align="center"><img src="https://i.imgur.com/X53W9M2.png"></p>
 <h3 align="center">Fabric Seasons: Delight Compat</h3>
 <p align="center">A simple mod that adds compatibility between Farmer's Delight and Fabric Seasons.</p>
